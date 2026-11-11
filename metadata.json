@@ -1,0 +1,6 @@
+{
+  "name": "Pixel Cafe Tycoon",
+  "description": "3인칭 도트 그래픽으로 즐기는 나만의 감성 카페 & 베이커리 타이쿤 게임. 손님 응대, 커피 추출, 빵 굽기, 직원 고용 및 매장 확장!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

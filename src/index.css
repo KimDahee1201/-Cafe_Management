@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'NeoDunggeunmo', 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+.font-pixel {
+  font-family: 'NeoDunggeunmo', 'Press Start 2P', monospace;
+}
+
+.pixel-art {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Retro pixel box shadow */
+.pixel-box {
+  box-shadow: inset -3px -3px 0px rgba(0, 0, 0, 0.4), inset 3px 3px 0px rgba(255, 255, 255, 0.25);
+}
+
+.pixel-btn {
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.35);
+  transition: all 0.08s ease;
+}
+.pixel-btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+}
+
+/* Floating animation */
+@keyframes float-up {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-30px); opacity: 0; }
+}
+.animate-float-up {
+  animation: float-up 0.9s ease-out forwards;
+}
